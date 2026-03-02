@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası - Link Saver</title>
+  <style>
+    :root { --bg: #f5f5f5; --card: #fff; --text: #1a1a1a; --muted: #666; --accent: #1976d2; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 24px; }
+    .container { max-width: 720px; margin: 0 auto; background: var(--card); padding: 32px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+    h1 { font-size: 1.75rem; margin-top: 0; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 8px; }
+    h2 { font-size: 1.25rem; margin-top: 28px; margin-bottom: 10px; color: var(--text); }
+    p { margin: 0 0 12px; color: var(--text); }
+    ul, ol { margin: 0 0 12px; padding-left: 24px; }
+    li { margin-bottom: 6px; }
+    .meta { font-size: 0.9rem; color: var(--muted); margin-bottom: 24px; }
+    .highlight { background: #e3f2fd; padding: 12px; border-radius: 8px; margin: 16px 0; border-left: 4px solid var(--accent); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1a1a1a; --card: #252525; --text: #e0e0e0; --muted: #aaa; --accent: #64b5f6; }
+      .highlight { background: #1e3a5f; border-left-color: var(--accent); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta"><strong>Link Saver</strong> · Son güncelleme: Şubat 2025</p>
+
+    <p>Bu gizlilik politikası, <strong>Link Saver</strong> mobil uygulamasını (“Uygulama”) kullandığınızda kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.</p>
+
+    <h2>1. Veri Sorumlusu</h2>
+    <p>Link Saver uygulamasının veri sorumlusu, uygulamayı sunan ve işleten gerçek veya tüzel kişidir. İletişim bilgileri uygulama mağazası sayfasında veya uygulama içinde yer alabilir.</p>
+
+    <h2>2. Toplanan Veriler</h2>
+
+    <h3>2.1 Hesap ve kimlik bilgileri</h3>
+    <ul>
+      <li><strong>E-posta adresi</strong> — Kayıt ve giriş için.</li>
+      <li><strong>Şifre</strong> — Güvenli bir şekilde hash’lenerek saklanır; düz metin olarak tutulmaz.</li>
+      <li><strong>İsim, soyisim, görünen isim</strong> — İsteğe bağlı; profil ve kişiselleştirme için.</li>
+      <li><strong>Profil fotoğrafı (avatar) URL’si</strong> — İsteğe bağlı; hesabınıza bağlı görsel tanımlama için.</li>
+    </ul>
+
+    <h3>2.2 Uygulama içeriği</h3>
+    <ul>
+      <li><strong>Kaydettiğiniz linkler</strong> — URL, başlık, açıklama, kategori, notlar, etiketler, favori bilgisi, varsa önizleme görseli URL’si.</li>
+      <li><strong>Kategoriler</strong> — Oluşturduğunuz kategori isimleri ve sıralaması.</li>
+      <li><strong>Fiyat takibi verileri</strong> — Takip ettiğiniz ürünlerin fiyat bilgileri ve (varsa) bildirim tercihleri.</li>
+    </ul>
+
+    <h3>2.3 Abonelik ve ödeme</h3>
+    <ul>
+      <li><strong>Premium abonelik durumu</strong> — Abonelik türü (aylık/yıllık), bitiş tarihi.</li>
+      <li><strong>Satın alma kayıtları</strong> — Ürün kimliği, işlem kimliği, platform, satın alma ve bitiş tarihleri (ödeme kartı veya banka bilgisi uygulama tarafından toplanmaz; ödemeler Google Play üzerinden işlenir).</li>
+    </ul>
+
+    <h3>2.4 Teknik ve kullanım verileri</h3>
+    <ul>
+      <li><strong>Cihaz ve uygulama bilgileri</strong> — İşletim sistemi, uygulama sürümü; hata giderme ve uyumluluk için.</li>
+      <li><strong>Reklam tanıtıcıları</strong> — Ücretsiz kullanıcılar için reklam gösteriminde kullanılmak üzere Google AdMob tarafından işlenen reklam kimliği ve benzeri veriler (reklam kişiselleştirmesi AdMob politikalarına tabidir).</li>
+    </ul>
+
+    <div class="highlight">
+      <strong>Konum verisi toplanmaz.</strong> Uygulama konum (GPS) izni istemez ve konum bilginizi toplamaz. Zaman dilimi bilgisi yalnızca bildirim zamanlaması için kullanılır ve cihaz konumunuzla eşleştirilmez.
+    </div>
+
+    <h2>3. Verilerin Saklanması ve İşlenmesi</h2>
+    <ul>
+      <li><strong>Cihazda (yerel)</strong> — Linkler, kategoriler ve tercihler cihazınızda SQLite veritabanında saklanır. Çevrimdışı kullanım bu verilerle sağlanır.</li>
+      <li><strong>Bulutta (Supabase)</strong> — Giriş yaptığınızda hesap bilgileri, profil, linkler ve kategoriler senkronizasyon amacıyla Supabase altyapısında işlenir. Veriler Avrupa Birliği / AB uyumlu veri merkezlerinde (Supabase’in kullandığı bölgeye göre) tutulabilir.</li>
+    </ul>
+
+    <h2>4. Verilerin Kullanım Amaçları</h2>
+    <ul>
+      <li>Hesap oluşturma, giriş ve hesap güvenliği.</li>
+      <li>Link ve kategori senkronizasyonu, yedekleme ve çoklu cihaz deneyimi.</li>
+      <li>Fiyat takibi ve bildirimlerin zamanında gösterilmesi.</li>
+      <li>Premium abonelik yönetimi ve satın alma geçmişinin tutulması.</li>
+      <li>Uygulama sürüm kontrolü ve güncelleme bilgisi sunma.</li>
+      <li>Ücretsiz kullanıcılara reklam gösterimi (Google AdMob).</li>
+      <li>Yasal yükümlülüklerin yerine getirilmesi ve meşru çıkarların korunması.</li>
+    </ul>
+
+    <h2>5. Üçüncü Taraflarla Paylaşım</h2>
+    <ul>
+      <li><strong>Supabase</strong> — Kimlik doğrulama, veritabanı ve bulut depolama hizmeti; veri işleme sözleşmesi kapsamında hareket eder.</li>
+      <li><strong>Google Play</strong> — Uygulama dağıtımı ve abonelik/tek seferlik satın almalar; ödeme bilgileri Google’da kalır, uygulama ödeme kartı bilgisi almaz.</li>
+      <li><strong>Google AdMob</strong> — Ücretsiz kullanıcılara reklam sunumu; reklam verileri Google’ın gizlilik politikasına tabidir.</li>
+    </ul>
+    <p>Yasal zorunluluk veya mahkeme kararı dışında verileriniz üçüncü taraflara satılmaz.</p>
+
+    <h2>6. Veri Saklama Süresi</h2>
+    <ul>
+      <li>Hesabınız aktif olduğu sürece hesap ve senkronize veriler saklanır.</li>
+      <li>Hesap silme talebinizde kişisel verileriniz ve hesaba bağlı içerik, yasal saklama yükümlülükleri saklı kalmak kaydıyla silinir veya anonimleştirilir.</li>
+      <li>Abonelik ve satın alma kayıtları, vergi ve tüketici mevzuatı gereği belirli bir süre saklanabilir.</li>
+    </ul>
+
+    <h2>7. Haklarınız</h2>
+    <p>Aşağıdaki haklara sahipsiniz (uygulanan kanunlara göre kapsam değişebilir):</p>
+    <ul>
+      <li><strong>Erişim</strong> — Hangi kişisel verilerinizin işlendiğini öğrenmek.</li>
+      <li><strong>Düzeltme</strong> — Yanlış veya eksik verilerin düzeltilmesini istemek (profil ve uygulama içi ayarlardan da güncelleyebilirsiniz).</li>
+      <li><strong>Silme</strong> — Hesabınızı silerek kişisel verilerinizin silinmesini talep etmek.</li>
+      <li><strong>Veri taşınabilirliği</strong> — Verilerinizi uygulama içi dışa aktarma (export) ile alabilirsiniz.</li>
+      <li><strong>İtiraz ve kısıtlama</strong> — Belirli işlemlere itiraz veya işlemin kısıtlanmasını talep etmek (mevzuata göre).</li>
+    </ul>
+    <p>Bu hakları kullanmak için uygulama içi “Hesabı sil” / “Çıkış yap” seçeneklerini kullanabilir veya veri sorumlusu ile iletişime geçebilirsiniz.</p>
+
+    <h2>8. Güvenlik</h2>
+    <p>Verileriniz teknik ve idari tedbirlerle korunur: şifreler güvenli hash’leme ile saklanır, iletişim TLS/HTTPS ile şifrelenir. Supabase ve Google altyapıları endüstri standartlarına uygun güvenlik önlemleri uygular.</p>
+
+    <h2>9. Çocuklar</h2>
+    <p>Link Saver, 13 yaşın altındaki bireylere yönelik değildir. Bilerek 13 yaş altı kullanıcılardan kişisel veri toplamayız. Bu yaş altında veri toplandığını fark edersek ilgili verileri sileriz.</p>
+
+    <h2>10. Politika Değişiklikleri</h2>
+    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişikliklerde uygulama mağazası veya uygulama içi duyuru ile bilgilendirilebilirsiniz. Güncel metin her zaman bu sayfada (veya uygulama mağazasındaki belirtilen URL’de) yayımlanacaktır.</p>
+
+    <h2>11. İletişim</h2>
+    <p>Gizlilik ve kişisel verilerinizle ilgili sorularınız veya talepleriniz için:</p>
+    <ul>
+      <li>Uygulama mağazasındaki geliştirici iletişim bilgisini kullanın, veya</li>
+      <li>Uygulama içindeki “Profil” / “Yardım” bölümünde yer alan iletişim adresine yazın.</li>
+    </ul>
+
+    <p class="meta" style="margin-top: 32px;">© Link Saver · Bu sayfa Şubat 2025 tarihinde güncellenmiştir.</p>
+  </div>
+</body>
+</html>
